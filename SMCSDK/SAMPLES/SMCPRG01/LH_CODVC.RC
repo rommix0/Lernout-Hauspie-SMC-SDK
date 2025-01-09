@@ -1,0 +1,26 @@
+#include <windows.h>
+#include "lh_res.h"
+
+LH_CODERMENU MENU
+BEGIN
+	POPUP "&File"
+	BEGIN
+		MENUITEM "Select &original file",       CM_ORIFILE
+		MENUITEM "Select &coded file name",	CM_CODEDFILE
+		MENUITEM "Select &decoded file name",	CM_DECODEDFILE
+		MENUITEM SEPARATOR
+		MENUITEM "E&xit",	CM_EXIT
+	END
+
+	MENUITEM "&Encode!",	CM_ENCODE
+	MENUITEM "&Decode!",	CM_DECODE
+	POPUP "\a&Help"
+	BEGIN
+		MENUITEM "&About",      CM_ABOUT
+	END
+
+END
+
+
+LH_ICON ICON LH_CODER.ICO
+

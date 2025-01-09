@@ -1,0 +1,22 @@
+
+[disks]
+    1 =. ,"L&H Audio CODEC for MSACM Install Disk", disk1
+
+[Installable.Drivers]
+    lh_codec = 1:lh_codec.acm, "MSACM.lh_codec", "Lernout & Hauspie Audio Codec V3.00",,
+    msacm = 1:msacm.drv, "WaveMapper", "Microsoft Sound Mapper V2.00",,
+
+[msacm.drv]
+    1:msacm.dll
+
+[lh_codec]
+    1:lh_codec.cfg
+    1:st34.dll
+    1:st48.dll
+    1:st72.dll
+    1:st80.dll
+    1:st96.dll
+    1:st160lc.dll
+    1:st80vb.dll
+    1:st120vb.dll
+    1:st180vb.dll
